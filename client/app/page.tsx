@@ -1,9 +1,17 @@
-import Image from "next/image";
+import AboutSection from "@/components/home/AboutSection";
+import HeroSlider from "@/components/home/HeroSlider";
+import ProjectsGrid from "@/components/home/ProjectsGrid";
+import ServiceIcons from "@/components/home/ServiceIcons";
+import TestimonialSlider from "@/components/home/TestimonialSlider";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div>
-      <h1>Welcome to RD Enterprise Official Website</h1>
-    </div>
+    <>
+      <HeroSlider />
+      <ServiceIcons />
+      <AboutSection/>
+      <ProjectsGrid/>
+      <TestimonialSlider/>
+    </>
   );
 }
